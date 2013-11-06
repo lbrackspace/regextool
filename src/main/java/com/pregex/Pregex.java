@@ -151,11 +151,12 @@ public class Pregex {
             cPgm.destroy();
 
             String status = resp.split("\\|")[0];
-            String msg = resp.split("\\|")[1];
+
             if (status.equals("BAD")) {
+                String msg = resp.split("\\|")[1];
                 System.out.println("Regex is invalid: " + msg);
             } else {
-                System.out.println("Regex is valid: " + msg);
+                System.out.println("Regex is valid: ");
             }
         } catch (IOException e) {
             System.out.println("PCRE Validation failed due to IOException: " + e.getMessage());
