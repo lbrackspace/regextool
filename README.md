@@ -1,5 +1,7 @@
 A simple tool to test Java, Perl and PCRE regex validation.
 
+First change directory to 'app' or where ever the main app is then...
+
 Compile: mvn -e clean compile assembly:single
 Compile C: make; make install
            Then place on your path.
